@@ -532,12 +532,12 @@ font-weight: 1.2rem;
     });
 
     payButton.addEventListener('click', function () {
-        if (selectedAmount < 1000) {
+        if (selectedAmount < 10) {
             amountError.classList.add('active');
             return;
         }
 
-        const uniqueCode = Math.floor(100 + Math.random() * 900);
+        const uniqueCode = Math.floor(10 + Math.random() * 90);
         const realAmount = selectedAmount + uniqueCode;
 
         // Ambil data form (kategori dihapus, jadi jangan dipakai)
